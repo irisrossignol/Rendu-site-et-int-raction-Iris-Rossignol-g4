@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Connexion</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="logo" href="index.html">
+          <img src="/Images/Logo.png" alt="Logo" />
+        </a>
+        <ul>
+          <li><a class="barnav" href="index.html">CARTES</a></li>
+          <li><a class="barnav" href="maisons.html">MAISONS</a></li>
+          <li><a class="barnav" href="profil.html">PROFIL</a></li>
+          <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="darkmode-btn">
+        <h1>Light Mode</h1>
+      </div>
+      <div class="formulaire">
+        <h1 class="titre-inscon">CONNEXION</h1>
+        <form class="formu" action="" >
+        <p class="username">
+          <label for="username">Nom d'utilisateur :</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+        </p>
+        <p class="password">
+          <label for="password">Mot de passe :</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </p>
+        <p class="envoyer">
+          <button class="button_form" type="submit">Connexion</button>
+        </p>
+        <p class="question">Pas de compte ?</p>
+        <p><a class="clic" href="inscription.html">Inscrivez-vous</a></p>
+      </div>
+      </form>
+    </main>
+    <footer>
+      <div class="foot">
+        <p>
+          Un problème ? Une question ? <a href="contact.html">Contactez-nous</a>
+        </p>
+      </div>
+    </footer>
+    <script src="/Javascript/main.js"></script>
+  </body>
+</html>

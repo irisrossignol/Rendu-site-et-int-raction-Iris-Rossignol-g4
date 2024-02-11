@@ -1,0 +1,514 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/Images/Background.jpg);
+}
+
+.darkmode {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/Images/clearbackground.jpg);
+}
+
+.darkmode nav {
+  background-color: bisque;
+}
+
+.darkmode .barnav {
+  color: black;
+}
+
+.darkmode .title_cards_container {
+  background-color: bisque;
+}
+
+.darkmode .titre-inscon {
+  color: rgb(0, 0, 0);
+}
+
+.darkmode .formulaire {
+  color: white;
+}
+
+.darkmode .profil-container {
+  background-color: bisque;
+}
+
+.darkmode .foot {
+  background-color: bisque;
+  color: rgb(0, 0, 0);
+}
+
+.darkmode .slidetitle {
+  color: rgb(0, 0, 0);
+}
+
+.darkmode h1 {
+  color: rgb(0, 0, 0);
+}
+
+.darkmode p {
+  color: rgb(0, 0, 0);
+}
+
+.darkmode .formulaire {
+  background-color: bisque;
+}
+
+.darkmode .house {
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  background-color: rgb(12, 19, 55);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.barnav {
+  text-decoration: none;
+  color: white;
+}
+.barnav:hover {
+  color: #06bbea;
+}
+ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+}
+
+ul .cartes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.Slytherin,
+.Ravenclaw,
+.Hufflepuff,
+.Gryffindor {
+  width: 18%;
+  height: 18%;
+  border-radius: 5%;
+}
+
+.Gryffindor:hover {
+  content: url("/Images/Gryffindor.png");
+  transition: transform 0.5s ease;
+  transform: rotateY(160deg);
+}
+
+.Slytherin:hover {
+  content: url("/Images/Slytherin.png");
+  transition: transform 0.5s ease;
+  transform: rotateY(160deg);
+}
+
+.Ravenclaw:hover {
+  content: url("/Images/Ravenclaw.png");
+  transition: transform 0.5s ease;
+  transform: rotateY(160deg);
+}
+
+.Hufflepuff:hover {
+  content: url("/Images/Hufflepuff.png");
+  transition: transform 0.5s ease;
+  transform: rotateY(160deg);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.title_cards_container {
+  background-color: rgb(12, 19, 55);
+  display: flex;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 0 auto;
+  transition: transform 0.8s ease;
+}
+
+.title_cards_container:hover {
+  transform: scale(1.1);
+}
+
+#logo {
+  width: 10%;
+  height: 90%;
+  transition: transform 0.5s ease;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+
+.cartes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.titre-inscon {
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.formulaire {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  background-color: rgb(12, 19, 55);
+  width: 35rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 0 auto;
+}
+
+.clic {
+  color: #06bbea;
+  text-decoration: none;
+}
+
+.clic:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+input {
+  margin: 0.5rem;
+  height: 1.5rem;
+  width: 20rem;
+}
+
+label {
+  width: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+
+label {
+  text-align: justify;
+}
+
+.question {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.button_form {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 3rem;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button_form:hover {
+  color: white;
+  background-color: #06bbea;
+}
+
+.pdp {
+  width: 20rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.profil-container {
+  background-color: rgb(12, 19, 55);
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+#maison {
+  width: 4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  position: relative;
+  animation: mymove 2s infinite;
+}
+
+#house {
+  text-align: start;
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: 0px;
+    left: 10px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.profil-container {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.test {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.foot {
+  background-color: rgb(12, 19, 55);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 2rem;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #06bbea;
+}
+.foot a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+textarea {
+  width: 20rem;
+  height: 7rem;
+}
+
+.slide {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 10px;
+  padding-left: 100px;
+}
+
+.slidetitle {
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: white;
+}
+
+.seco {
+  align-items: center;
+}
+
+.sinsc {
+  align-items: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid gray;
+  background-color: aliceblue;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: grey;
+}
+
+.tab_content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.active {
+  display: block;
+}
+
+.tab_container {
+  width: fit-content;
+}
+
+.select {
+  background-color: rgb(145, 145, 145);
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btnfiltre {
+  margin-right: 1rem;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif01;
+  border-radius: 5px;
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.darkmode-btn {
+  background-color: rgb(12, 19, 55);
+  width: fit-content;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 12px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  transition: transform 0.8s ease;
+}
+
+.darkmode-btn:hover {
+  transform: scale(1.1);
+}
+
+.darkmode .darkmode-btn {
+  background-color: bisque;
+}
+
+#qst {
+  font-size: 121%;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tab_content {
+  background-color: #ccc;
+  width: 70rem;
+}
+
+.tab_content p {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+
+.tab_content h3 {
+  font-size: 2rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+}
+
+.tab_container {
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
+
+.swiper-slide {
+  height: 60vh;
+  font-size: 3rem;
+  padding-left: 100px;
+  color: rgb(226, 190, 10) !important;
+  margin-top: 2rem;
+}
+
+.subtitle {
+  font-size: 8rem;
+  color: rgb(226, 190, 10) !important;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+#sub_pouf {
+  color: rgb(63, 29, 5) !important;
+}
+
+#txt_puf {
+  color: rgb(63, 29, 5) !important;
+}
+
+.slide-red {
+  background-image: url("/Images/RedHouse.jpg");
+  background-size: cover;
+}
+
+.slide-green {
+  background-image: url("/Images/GreenHouse.png");
+  background-size: cover;
+}
+
+.slide-blue {
+  background-image: url("/Images/BlueHouse.jpg");
+  background-size: cover;
+}
+
+.slide-yellow {
+  background-image: url("/Images/YellowHouse.jpg");
+  background-size: cover;
+}
+
+.swiper-wrapper {
+  align-content: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+#choice {
+  display: flex;
+  margin-left: 13rem;
+  width: 8rem;
+  height: 2rem;
+  font-size: 18px;
+}
