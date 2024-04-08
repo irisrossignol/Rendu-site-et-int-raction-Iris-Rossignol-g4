@@ -5,15 +5,19 @@
 }
 
 body {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-image: url(/Images/Background.jpg);
+  */
+  background-color:#212939
 }
 
 .darkmode {
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;
   background-size: cover;
   background-image: url(/Images/clearbackground.jpg);
+  */
+  background-color: rgb(255, 241, 224);
 }
 
 .darkmode nav {
@@ -65,13 +69,20 @@ body {
   color: rgb(0, 0, 0);
 }
 
+
+
+.darkmode .persott {
+  background-color: bisque;
+}
+
 nav {
-  background-color: rgb(12, 19, 55);
+  background-color: rgb(16, 19, 32);
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 22px;
   display: flex;
   justify-content: space-between;
+  font-family: sans-serif;
 }
 
 .barnav {
@@ -110,6 +121,7 @@ img {
   border-radius: 5%;
 }
 
+/*
 .Gryffindor:hover {
   content: url("/Images/Gryffindor.png");
   transition: transform 0.5s ease;
@@ -133,6 +145,7 @@ img {
   transition: transform 0.5s ease;
   transform: rotateY(160deg);
 }
+*/
 
 h1 {
   text-align: center;
@@ -140,17 +153,14 @@ h1 {
 }
 
 .title_cards_container {
-  background-color: rgb(12, 19, 55);
+  background-color: rgb(16, 19, 32);
   display: flex;
   width: fit-content;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 2rem auto 0 auto;
   transition: transform 0.8s ease;
-}
-
-.title_cards_container:hover {
-  transform: scale(1.1);
+  font-family: sans-serif;
 }
 
 #logo {
@@ -180,13 +190,15 @@ h1 {
 
 .formulaire {
   font-size: 18px;
+  font-family: sans-serif;
   color: white;
   text-align: center;
-  background-color: rgb(12, 19, 55);
+  background-color: rgb(16, 19, 32);
   width: 35rem;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 2rem auto 0 auto;
+  margin-bottom: 7rem;
 }
 
 .clic {
@@ -226,7 +238,7 @@ label {
   width: 8rem;
   height: 3rem;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: sans-serif;
 }
 
 .button_form:hover {
@@ -243,7 +255,7 @@ label {
 }
 
 .profil-container {
-  background-color: rgb(12, 19, 55);
+  background-color: rgb(16, 19, 32);
   margin-top: 3rem;
   margin-left: 3rem;
   margin-right: 2rem;
@@ -280,6 +292,7 @@ label {
 .profil-container {
   color: white;
   font-size: 1.5rem;
+  font-family: sans-serif;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -291,13 +304,14 @@ label {
 }
 
 .foot {
-  background-color: rgb(12, 19, 55);
+  background-color: rgb(16, 19, 32);
   width: 100%;
   position: fixed;
   bottom: 0;
   height: 2rem;
   color: white;
   font-size: 18px;
+  font-family: sans-serif;
   text-align: center;
   padding-top: 0.3rem;
 }
@@ -323,12 +337,14 @@ textarea {
   align-items: flex-start;
   flex-direction: column;
   font-size: 10px;
+  font-family: sans-serif;
   padding-left: 100px;
 }
 
 .slidetitle {
   letter-spacing: 3px;
   font-size: 24px;
+  font-family: sans-serif;
   color: white;
 }
 
@@ -392,20 +408,22 @@ textarea {
 .btnfiltre {
   margin-right: 1rem;
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif01;
+  font-family: sans-serif;
   border-radius: 5px;
   width: 10rem;
   height: 2.5rem;
 }
 
 .darkmode-btn {
-  background-color: rgb(12, 19, 55);
-  width: fit-content;
+  background-color: rgb(16, 19, 32);
+  width: 11rem;
+  height: 5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   height: 2rem;
   border-radius: 0.5rem;
   font-size: 12px;
+  font-family: sans-serif;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   transition: transform 0.8s ease;
@@ -421,6 +439,7 @@ textarea {
 
 #qst {
   font-size: 121%;
+  font-family: sans-serif;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
 }
@@ -433,12 +452,13 @@ textarea {
 .tab_content p {
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: sans-serif;
   font-size: 1.5rem;
 }
 
 .tab_content h3 {
   font-size: 2rem;
+  font-family: sans-serif;
 }
 
 .tab {
@@ -455,6 +475,7 @@ textarea {
 .swiper-slide {
   height: 60vh;
   font-size: 3rem;
+  font-family: sans-serif;
   padding-left: 100px;
   color: rgb(226, 190, 10) !important;
   margin-top: 2rem;
@@ -462,6 +483,7 @@ textarea {
 
 .subtitle {
   font-size: 8rem;
+  font-family: sans-serif;
   color: rgb(226, 190, 10) !important;
   margin-top: 4rem;
   margin-bottom: 3rem;
@@ -502,6 +524,7 @@ textarea {
 .error-message {
   color: red;
   font-size: 1rem;
+  font-family: sans-serif;
   margin-top: 5px;
 }
 
@@ -511,11 +534,12 @@ textarea {
   width: 8rem;
   height: 2rem;
   font-size: 18px;
+  font-family: sans-serif;
 }
 
 
 .persott {
-  background-color: rgb(12, 19, 55);;
+  background-color: rgb(16, 19, 32);
   border-radius: 0.5rem;
   width: 98%;
   margin-bottom: 1rem;
@@ -538,9 +562,15 @@ textarea {
 
 .persott h1 {
   font-size: 19px; 
+  font-family: sans-serif;
   display: inline;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.userInfo {
+  background-color: aquamarine;
+  margin-bottom: 8rem;
 }

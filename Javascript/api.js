@@ -1,8 +1,4 @@
 
-
-
-
-
 function fetchHP(id) {
 
     return fetch('https://hp-api.lainocs.fr/characters/' + id)

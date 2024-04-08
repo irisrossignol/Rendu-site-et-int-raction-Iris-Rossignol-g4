@@ -14,7 +14,7 @@
         </a>
         <ul>
           <li><a class="barnav" href="index.html">CARTES</a></li>
-          <li><a class="barnav" href="personnages.html">PERSONNAGES</a></li>
+          <li><a class="barnav" href="personages.html">PERSONNAGES</a></li>
           <li><a class="barnav" href="maisons.html">MAISONS</a></li>
           <li><a class="barnav" href="profil.html">PROFIL</a></li>
           <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
@@ -25,34 +25,33 @@
       <div class="darkmode-btn">
         <h1>Light Mode</h1>
       </div>
+
+
+
       <div class="formulaire">
-        <h1 class="titre-inscon">CONNEXION</h1>
-        <form class="formu" action="" >
-        <p class="username">
-          <label for="username">Nom d'utilisateur :</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            required
-          />
-        </p>
-        <p class="password">
-          <label for="password">Mot de passe :</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-          />
-        </p>
-        <p class="envoyer">
-          <button class="button_form" type="submit">Connexion</button>
-        </p>
-        <p class="question">Pas de compte ?</p>
-        <p><a class="clic" href="inscription.html">Inscrivez-vous</a></p>
+        <form class="formu" method="POST" >
+          <h1 class="titre-inscon">CONNEXION</h1>
+          <p class="email">
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" placeholder="email" required/>
+          </p>
+          <p class="password">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="password" required />
+          </p>
+          <p class="envoyer">
+            <button class="button_form" type="submit" onclick="login()">Connexion</button>
+          </p>
+          <p class="question">Pas de compte ?</p>
+          <p><a class="clic" href="inscription.html">Inscrivez-vous</a></p>
+        </form>
       </div>
-      </form>
+
+      <!-- <div id="userInfo" >
+        <h1><p>Pseudo:<span id="pseudo"></span></p></h1>
+        <h1><p>Email:<span id="email"></span></p></h1>
+    </div> -->
+
     </main>
     <footer>
       <div class="foot">
@@ -62,5 +61,7 @@
       </div>
     </footer>
     <script src="/Javascript/main.js"></script>
+    <script src="/Javascript/scriptConnex.js"></script>
+    <!-- <script src="/Javascript/SciptUser.js"></script> -->
   </body>
 </html>

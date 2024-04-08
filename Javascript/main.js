@@ -30,7 +30,7 @@ function darkMode() {
   });
 }
 
-//Filtre (projet d'axe)
+//Filtre 
 function Filtre() {
   const boutonsFiltre = document.querySelectorAll(".btnfiltre");
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // swipper à supprimer pour projet d'axe
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".mon-slider", {
     loop: true,
 
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // fin
+*/
 
 //Formulaire
 const choice = document.getElementById("choice");
@@ -131,8 +132,10 @@ function validPassword2() {
   }
 }
 
-username.addEventListener("input", validUsername);
+
+/*username.addEventListener("input", validUsername);
 choice.addEventListener("change", validChoice);
 password1.addEventListener("input", validPassword);
 password1.addEventListener("input", validPassword2);
 password2.addEventListener("input", validPassword);
+*/
