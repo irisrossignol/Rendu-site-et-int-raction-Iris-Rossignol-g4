@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Personnages</title>
+    <link rel="stylesheet" href="/front/style.css" />
+    <title>Connexion</title>
   </head>
   <body>
     <header>
       <nav>
         <a id="logo" href="index.html">
-          <img src="/Images/Logo.png" alt="Logo" />
+          <img src="/front/Images/Logo.png" alt="Logo" />
         </a>
         <ul>
           <li><a class="barnav" href="index.html">CARTES</a></li>
@@ -25,20 +25,18 @@
       <div class="darkmode-btn">
         <h1>Light Mode</h1>
       </div>
-      <div class="title_cards_container">
-        <h1 class="title_cards">Les personnages :</h1>
+      <div class="formulaire">
+        <p class="Nom d'utilisateur">
+          <label id="qst" for="comments"
+            >Si vous avez le moindre problème, question ou recommandation, nous
+            sommes à votre écoute :</label
+          >
+          <textarea id="comments"></textarea>
+        </p>
+        <p class="envoyer">
+          <button class="button_form" type="submit">Envoyer</button>
+        </p>
       </div>
-      <div class="persott" id="harry"></div>
-      <div class="persott" id="ron"> </div>
-      <div class="persott" id="draco"> </div>
-      <div class="persott" id="hermione"> </div>
-      <div class="persott" id="albus"> </div>
-      <div class="persott" id="sirius"> </div>
-      <div class="persott" id="cedric"> </div>
-      <div class="persott" id="cho"> </div>
-      <div class="persott" id="rubeus"> </div>
-      <div class="persott" id="luna"> </div>
-
     </main>
     <footer>
       <div class="foot">
@@ -47,7 +45,6 @@
         </p>
       </div>
     </footer>
-    <script src="/Javascript/api.js"></script>
-    <script src="/Javascript/main.js"></script>
+    <script src="/front/Javascript/main.js"></script>
   </body>
 </html>

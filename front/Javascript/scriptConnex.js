@@ -22,4 +22,3 @@ const login = async () => {
     window.location.href = 'profil.html'
 
 }
-

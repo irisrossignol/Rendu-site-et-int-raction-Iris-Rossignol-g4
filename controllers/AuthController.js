@@ -27,32 +27,6 @@ const signup = async (req, res) => {
 
 
 
-
-    /*const login = async (req, res) => {
-        console.log("login");
-        console.log(req.body);
-        try {
-        const user = await prisma.user.findUnique({
-            where: {
-                email: req.body.email
-            }
-        }).then(data => {
-            if(!data) res.status(404).send("User not found");
-        const valid = bcrypt.compare(req.body.password, data.password);
-    if (!valid) res.status(400).send("Invalid password");
-            const token = jwt.sign ({ id: data.id, email: data.email }, process.env.JWT_SECRET,
-                {          
-                    expiresIn: '1h'
-                });
-                res.send({token: token});
-            }).catch(e => {
-                console.log(error);
-                res.status(400).send(e)
-        })
-    } catch (error) {
-        res.json(error)
-    }} */
-
    
 const login = async (req, res) => {
     console.log("login");

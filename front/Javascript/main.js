@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Filtre();
 });
 
-// swipper à supprimer pour projet d'axe
+//swipper à supprimer pour projet d'axe
 /* document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".mon-slider", {
     loop: true,
