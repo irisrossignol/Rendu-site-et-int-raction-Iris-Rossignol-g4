@@ -4,6 +4,6 @@ from '../controllers/UserController.js'
 
 const router = express.Router();
 
-router.get('/user', getUser)
+router.get('/', getUser)
 
 export default router;

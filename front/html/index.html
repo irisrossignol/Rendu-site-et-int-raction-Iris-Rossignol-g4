@@ -14,7 +14,7 @@
         </a>
         <ul>
           <li><a class="barnav" href="index.html">CARTES</a></li>
-          <li><a class="barnav" href="personages.html">PERSONNAGES</a></li>
+          <!-- <li><a class="barnav" href="personages.html">PERSONNAGES</a></li> -->
           <li><a class="barnav" href="maisons.html">MAISONS</a></li>
           <li><a class="barnav" href="profil.html">PROFIL</a></li>
           <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
@@ -25,8 +25,16 @@
       <div class="darkmode-btn">
         <h1>Light Mode</h1>
       </div>
+
+<div>
+  <h1>Bienvenue dans le monde fantastique d'Harry Potter !</h1>
+  <h2 class="ligne">Collectionnez les cartes de tous les personnages et échangez les avec vos amis !</h2>
+  <button class="button_form2" >Ouvrir un booster</button>
+</div>
+
+
       <div class="title_cards_container">
-        <h1 class="title_cards">Les cartes :</h1>
+        <h1 class="title_cards">Toutes les cartes :</h1>
       </div>
 
       <div class="filter">
@@ -45,20 +53,34 @@
         <button
           id="PouffsoufleBouton"
           class="btnfiltre"
-          data-house="Poufsouffle"
-        >
+          data-house="Poufsouffle">
           Poufsouffle
         </button>
       </div>
 
       <div class="cartes">
-        <div class="card_container Gryffindor" data-house="Gryffondor">
+        <div class="cartehp" id="characters"></div>
+      </div>
+      <!-- <div class="cartestt" id="ron"> </div>
+      <div class="cartestt" id="hermione"> </div>
+      <div class="cartestt" id="albus"> </div>
+      <div class="cartestt" id="sirius"> </div>
+      <div class="cartestt" id="luna"> </div>
+      <div class="cartestt" id="rubeus"> </div> -->
+
+      <!-- <div class="toutesCartes carteshpR" data-house="Gryffondor" id="harry"></div>
+      <div class="toutesCartes carteshpV" data-house="Serpentard" id="draco"> </div>
+      <div class="toutesCartes carteshpJ" data-house="Poufsouffle" id="cedric"> </div>
+      <div class="toutesCartes carteshpB" data-house="Serdaigle" id="cho"> </div> -->
+      
+    
+<!-- <div class="card_container Gryffindor" data-house="Gryffondor">
           <img src="/front/Images/harry.png" alt="Harry Potter" />
         </div>
         <div class="card_container Gryffindor" data-house="Gryffondor">
           <img src="/front/Images/Albus.png" alt="Albus Dumbledore" />
         </div>
-        <div class="card_container Gryffindor" data-house="Gryffondor">
+       <div class="card_container Gryffindor" data-house="Gryffondor">
           <img src="/front/Images/Hagrid.png" alt="Hagrid" />
         </div>
         <div class="card_container Gryffindor" data-house="Gryffondor">
@@ -70,8 +92,8 @@
         <div class="card_container Ravenclaw" data-house="Serdaigle">
           <img src="/front/Images/Cho.png" alt="Cho Chang" />
         </div>
-        <div class="card_container Ravenclaw" data-house="Serdaigle">
-          <img src="/front/Images/Luna.png" alt="Luna LoveGood" />
+        <div class="card_container Ravenclaw" data-house="Serdaigle"> 
+        <img src="/front/Images/Luna.png" alt="Luna LoveGood" />
         </div>
         <div class="card_container Slytherin" data-house="Serpentard">
           <img src="/front/Images/Sirius.png" alt="Sirius Black" />
@@ -81,8 +103,7 @@
         </div>
         <div class="card_container Hufflepuff" data-house="Poufsouffle">
           <img src="/front/Images/Cedric.png" alt="Cedric Diggory" />
-        </div>
-      </div>
+        </div>  -->
     </main>
     <footer>
       <div class="foot">
@@ -92,5 +113,6 @@
       </div>
     </footer>
     <script src="/front/Javascript/main.js"></script>
+    <script src="/front/Javascript/api.js"> </script>
   </body>
 </html>

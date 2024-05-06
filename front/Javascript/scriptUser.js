@@ -11,12 +11,7 @@ fetch('http://localhost:3000/user/' , {
 })
 .then((response) => response.json())
 .then((data) => {
-    let user = document.querySelector('#user')
-    user.inerHTML = `
-    <h1>${data.pseudo}</h1>
-    <h2>${data.email}</h3>
-    <a href="index.html">Back</a>
-    `
+    console.log(data)
 
     document.getElementById('pseudo').textContent = data.pseudo;
     document.getElementById('email').textContent = data.email;

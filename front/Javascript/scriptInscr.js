@@ -30,4 +30,5 @@ form.addEventListener("submit", (event) => {
     })
     .catch(e=> console.log(e))
 
+    window.location.href = 'reussi.html'
 });

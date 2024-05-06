@@ -40,6 +40,10 @@ body {
   color: white;
 }
 
+.darkmode .ligne {
+  color: black;
+}
+
 .darkmode .profil-container {
   background-color: bisque;
 }
@@ -152,6 +156,11 @@ h1 {
   color: white;
 }
 
+h2 {
+  text-align: center;
+  color: white;
+}
+
 .title_cards_container {
   background-color: rgb(16, 19, 32);
   display: flex;
@@ -241,7 +250,29 @@ label {
   font-family: sans-serif;
 }
 
+.button_form2 {
+  margin-top: 1rem;
+  width: 14rem;
+  height: 3rem;
+  font-size: 25px;
+  font-family: sans-serif;
+  display: flex;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.lienbtn {
+  text-decoration: none;
+  color: black;
+}
+
 .button_form:hover {
+  color: white;
+  background-color: #06bbea;
+}
+
+.button_form2:hover {
   color: white;
   background-color: #06bbea;
 }
@@ -472,55 +503,6 @@ textarea {
   margin-bottom: 7rem;
 }
 
-.swiper-slide {
-  height: 60vh;
-  font-size: 3rem;
-  font-family: sans-serif;
-  padding-left: 100px;
-  color: rgb(226, 190, 10) !important;
-  margin-top: 2rem;
-}
-
-.subtitle {
-  font-size: 8rem;
-  font-family: sans-serif;
-  color: rgb(226, 190, 10) !important;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-}
-
-#sub_pouf {
-  color: rgb(63, 29, 5) !important;
-}
-
-#txt_puf {
-  color: rgb(63, 29, 5) !important;
-}
-
-.slide-red {
-  background-image: url("/Images/RedHouse.jpg");
-  background-size: cover;
-}
-
-.slide-green {
-  background-image: url("/Images/GreenHouse.png");
-  background-size: cover;
-}
-
-.slide-blue {
-  background-image: url("/Images/BlueHouse.jpg");
-  background-size: cover;
-}
-
-.slide-yellow {
-  background-image: url("/Images/YellowHouse.jpg");
-  background-size: cover;
-}
-
-.swiper-wrapper {
-  align-content: center;
-}
-
 .error-message {
   color: red;
   font-size: 1rem;
@@ -573,4 +555,35 @@ textarea {
 .userInfo {
   background-color: aquamarine;
   margin-bottom: 8rem;
+}
+
+.ligne {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.reussi {
+margin-top: 5rem;
+margin-bottom: 2rem;
+}
+
+.carteshp {
+  background-color: black;
+  width: 300px ;
+  height: 425px;
+  object-fit: cover;
+  border-left: 20px #620404 solid;
+  border-bottom: 50px #620404 solid;
+  border-right: 20px #620404 solid;
+  border-top: 20px #620404 solid;
+  border-radius: 5%;
+  margin: 10px; 
+}
+
+.cartehp {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
 }

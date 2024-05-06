@@ -25,10 +25,30 @@ function darkMode() {
   const darkModeButton = document.querySelector(".darkmode-btn");
   const body = document.querySelector("body");
 
-  darkModeButton.addEventListener("click", () => {
-    body.classList.toggle("darkmode");
+  function darkModeActif() {
+    body.classList.add("darkmode");
+    localStorage.setItem("darkMode", "actif"); 
+  }
+
+  function darkModeDes() {
+    body.classList.remove("darkmode");
+    localStorage.setItem("darkMode", ""); //darkmode (light) pas actif
+  }
+
+  if (localStorage.getItem("darkMode") === "actif") {
+    darkModeActif();
+  }
+
+  darkModeButton.addEventListener("click", () => {  // a l'écoute du clic le darkmode "toggle"
+    if (body.classList.toggle("darkmode")) {
+      darkModeActif();
+    } else {
+      darkModeDes();
+    }
   });
+;
 }
+
 
 //Filtre 
 function Filtre() {
