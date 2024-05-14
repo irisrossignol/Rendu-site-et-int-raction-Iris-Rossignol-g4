@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/front/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Accueil</title>
   </head>
   <body>
@@ -12,24 +13,33 @@
         <a id="logo" href="index.html">
           <img src="/front/Images/Logo.png" alt="Logo" />
         </a>
-        <ul>
+
+
+
+        <ul class="navGrand">
           <li><a class="barnav" href="index.html">CARTES</a></li>
-          <!-- <li><a class="barnav" href="personages.html">PERSONNAGES</a></li> -->
-          <li><a class="barnav" href="maisons.html">MAISONS</a></li>
           <li><a class="barnav" href="profil.html">PROFIL</a></li>
           <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
         </ul>
+
+        <ul class="navPetit">
+          <li> <a class="barnav" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          <li> <a class="barnav" href="profil.html"><i class="fa-solid fa-user"></i></a></li>
+          <li> <a class="barnav" href="connexion.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+        </ul>
+
+
       </nav>
     </header>
     <main>
-      <div class="darkmode-btn">
+      <!-- <div class="darkmode-btn">
         <h1>Light Mode</h1>
-      </div>
+      </div> -->
 
 <div>
   <h1>Bienvenue dans le monde fantastique d'Harry Potter !</h1>
   <h2 class="ligne">Collectionnez les cartes de tous les personnages et échangez les avec vos amis !</h2>
-  <button class="button_form2" >Ouvrir un booster</button>
+  <a class="klm" href="booster.html"><button class="button_form2">Commencez votre aventure</button></a>
 </div>
 
 
@@ -37,23 +47,23 @@
         <h1 class="title_cards">Toutes les cartes :</h1>
       </div>
 
+      <h1 class="rech">Rechercher par nom: <input type="text" id="searchChara"></h1>
+
+
       <div class="filter">
         <button id="tousBouton" class="btnfiltre select" data-house="Tous">
           Toutes les cartes
         </button>
-        <button id="GryffondorBouton" class="btnfiltre" data-house="Gryffondor">
+        <button id="GryffondorBouton" class="btnfiltre" data-house="Gryffindor">
           Gryffondor
         </button>
-        <button id="SerpentardBouton" class="btnfiltre" data-house="Serpentard">
+        <button id="SerpentardBouton" class="btnfiltre" data-house="Slytherin">
           Serpentard
         </button>
-        <button id="SerdaigleBouton" class="btnfiltre" data-house="Serdaigle">
+        <button id="SerdaigleBouton" class="btnfiltre" data-house="Ravenclaw">
           Serdaigle
         </button>
-        <button
-          id="PouffsoufleBouton"
-          class="btnfiltre"
-          data-house="Poufsouffle">
+        <button id="PouffsoufleBouton" class="btnfiltre" data-house="Hufflepuff">
           Poufsouffle
         </button>
       </div>
@@ -61,6 +71,8 @@
       <div class="cartes">
         <div class="cartehp" id="characters"></div>
       </div>
+
+
       <!-- <div class="cartestt" id="ron"> </div>
       <div class="cartestt" id="hermione"> </div>
       <div class="cartestt" id="albus"> </div>
@@ -104,6 +116,26 @@
         <div class="card_container Hufflepuff" data-house="Poufsouffle">
           <img src="/front/Images/Cedric.png" alt="Cedric Diggory" />
         </div>  -->
+
+
+        <button id="echange">Échanger des cartes</button>
+
+  <div id="popupForm" class="popup">
+      <form id="popform">
+        <div id="popupForm">
+        <button id="fermer">Fermer</button>
+        <label class="lbltxt">Carte recherché :</label>
+        <input type="text" id="cartere" name="cartere" required />
+        <label class="lbltxt">Carte à échanger :</label>
+        <input type="text" id="cartea" name="cartea" required /> <br>
+          <button  class="cbong" type="button">Échanger</button>
+      </form>
+  </div>
+</div>
+
+
+
+
     </main>
     <footer>
       <div class="foot">
@@ -114,5 +146,6 @@
     </footer>
     <script src="/front/Javascript/main.js"></script>
     <script src="/front/Javascript/api.js"> </script>
+    <script src="/front/Javascript/details.js"></script>
   </body>
 </html>

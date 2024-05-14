@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/front/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Connexion</title>
   </head>
   <body>
@@ -12,19 +13,24 @@
         <a id="logo" href="index.html">
           <img src="/front/Images/Logo.png" alt="Logo" />
         </a>
-        <ul>
+
+        <ul class="navGrand">
           <li><a class="barnav" href="index.html">CARTES</a></li>
-          <!-- <li><a class="barnav" href="personages.html">PERSONNAGES</a></li> -->
-          <li><a class="barnav" href="maisons.html">MAISONS</a></li>
           <li><a class="barnav" href="profil.html">PROFIL</a></li>
           <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
+        </ul>
+
+        <ul class="navPetit">
+          <li> <a class="barnav" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          <li> <a class="barnav" href="profil.html"><i class="fa-solid fa-user"></i></a></li>
+          <li> <a class="barnav" href="connexion.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="darkmode-btn">
+      <!-- <div class="darkmode-btn">
         <h1>Light Mode</h1>
-      </div>
+      </div> -->
 
 
 
@@ -41,7 +47,7 @@
           <input type="text" id="pseudo" name="pseudo" placeholder="pseudo" required />
         </p>
 
-      <p class="house_choice">
+      <!-- <p class="house_choice">
         <label for="house_choice">Choix de la maison :</label>
         <select id="choice" name="choice">
           <option value="nochoice">Choix</option>
@@ -50,7 +56,7 @@
           <option value="option3">Serdaigle</option>
           <option value="option4">Poufsouffle</option>
         </select>
-      </p>
+      </p> -->
 
         <p class="password">
           <label for="password">Mot de passe :</label>

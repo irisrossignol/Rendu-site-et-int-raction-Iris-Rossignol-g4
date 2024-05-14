@@ -1,8 +1,8 @@
 let token = localStorage.getItem('token')
 
-if (!token) {
-    window.location.href = 'login.html'
-}
+// if (!token) {
+//     window.location.href = 'login.html'
+// }
 
 fetch('http://localhost:3000/user/' , {
     headers: {

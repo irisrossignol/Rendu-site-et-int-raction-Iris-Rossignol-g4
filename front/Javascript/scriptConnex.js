@@ -19,6 +19,8 @@ const login = async () => {
     console.log(data)
     localStorage.setItem('token', data.token)
 
+    localStorage.setItem('email', email) //pas compris marche pas
+
     window.location.href = 'profil.html'
 
 }

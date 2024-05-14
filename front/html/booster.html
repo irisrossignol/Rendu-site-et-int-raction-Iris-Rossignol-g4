@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/front/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Connexion</title>
+  
   </head>
   <body>
     <header>
@@ -28,35 +29,18 @@
       </nav>
     </header>
     <main>
-      <!-- <div class="darkmode-btn">
-        <h1>Light Mode</h1>
-      </div> -->
 
 
+        <div>
+            <h2 class="dispo">Les boosters sont disponibles toutes les 24h</h2>
+            <button class="button_form3" >Ouvrir un booster</button>
+        </div>
 
-      <div class="formulaire">
-        <form class="formu">
-          <h1 class="titre-inscon">CONNEXION</h1>
-          <p class="email">
-            <label for="email">Email :</label>
-            <input type="text" id="email" name="email" placeholder="email" required/>
-          </p>
-          <p class="password">
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" name="password" placeholder="password" required />
-          </p>
-          <p class="envoyer">
-            <button class="button_form" type="button" onclick="login()">Connexion</button>
-          </p>
-          <p class="question">Pas de compte ?</p>
-          <p><a class="clic" href="inscription.html">Inscrivez-vous</a></p>
-        </form>
+      <div class="cartes">
+        <div class="cartehp" id="characters"></div>
       </div>
 
-      <!-- <div id="userInfo" >
-        <h1><p>Pseudo:<span id="pseudo"></span></p></h1>
-        <h1><p>Email:<span id="email"></span></p></h1>
-    </div> -->
+
 
     </main>
     <footer>
@@ -67,7 +51,6 @@
       </div>
     </footer>
     <script src="/front/Javascript/main.js"></script>
-    <script src="/front/Javascript/scriptConnex.js"></script>
-    <!-- <script src="/Javascript/SciptUser.js"></script> -->
+    <script src="/front/Javascript/booster.js"></script>
   </body>
 </html>
