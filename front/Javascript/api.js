@@ -39,7 +39,7 @@ async function displayHP(elementId) {
 
     container.appendChild(cardDiv); // cardDiv c dans container
     });
-
+}
     
 // let date = data.birthday.slice(0,-14)
 //     document.getElementById(elementId).innerHTML = `
@@ -74,7 +74,29 @@ like.forEach(heartIcon => {
 });
 
 
+
+
+
+
+//MArche pas a régler important jcrois
+ function Page() {
+    const liien = document.querySelector(".cartehp");
+    const characterId = data.id;
+
+    liien.forEach((lien) => {
+    lien.addEventListener("click", () => {
+    window.location.href = `page.html?id=${characterId}`;
+
+     });
+});
 }
+
+
+
+
+
+
+
 
 
 
