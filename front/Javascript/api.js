@@ -39,7 +39,9 @@ async function displayHP(elementId) {
 
     container.appendChild(cardDiv); // cardDiv c dans container
     });
-}
+
+
+
     
 // let date = data.birthday.slice(0,-14)
 //     document.getElementById(elementId).innerHTML = `
@@ -71,67 +73,56 @@ like.forEach(heartIcon => {
 
     });
 
+    
 });
 
+}
+displayHP("characters")
 
 
 
 
 
 //MArche pas a régler important jcrois
- function Page() {
-    const liien = document.querySelector(".cartehp");
-    const characterId = data.id;
+//  function Page() {
+//     const liien = document.querySelector(".cartehp");
+//     const characterId = data.id;
 
-    liien.forEach((lien) => {
-    lien.addEventListener("click", () => {
-    window.location.href = `page.html?id=${characterId}`;
+//     liien.forEach((lien) => {
+//     lien.addEventListener("click", () => {
+//     window.location.href = `page.html?id=${characterId}`;
 
-     });
-});
-}
-
-
+//      });
+// });
+// }
 
 
-
-
-
-
-
-
-
-
-
-
-
-displayHP("characters")
 
 
 
 //searchBar
-function searchBar() {
-    const bar = document.querySelectorAll(".rech");
-    const input = document.getElementById("myInput"); //jcrois ca prend ce qu'il y a ecrit ?? pas trop compris lol
-    const cards = document.querySelectorAll(".carteshp");
+// function searchBar() {
+//     const bar = document.querySelectorAll(".rech");
+//     const input = document.getElementById("myInput"); //jcrois ca prend ce qu'il y a ecrit ?? pas trop compris lol
+//     const cards = document.querySelectorAll(".carteshp");
 
-    cards.forEach(card => {
-        const name = card.querySelector(data.name).textContent.toUpperCase(); //chaque nom des perso
+//     cards.forEach(card => {
+//         const name = card.querySelector(data.name).textContent.toUpperCase(); //chaque nom des perso
 
-        if (name.indexOf(filter) > -1) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    });
-}
+//         if (name.indexOf(filter) > -1) {
+//             card.style.display = "";
+//         } else {
+//             card.style.display = "none";
+//         }
+//     });
+// }
 
 
 
 
 document.addEventListener("DOMContentLoaded", function () {
     Filtre();
-    searchBar();
+    // searchBar();
     
 });
 
