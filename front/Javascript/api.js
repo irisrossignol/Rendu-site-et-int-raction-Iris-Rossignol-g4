@@ -9,17 +9,19 @@ async function displayHP(elementId) {
     const data = await fetchHP()
     const container=document.getElementById(elementId)
 
+
     data.forEach(element => {
     const cardDiv = document.createElement("div"); // chaque carte = une div
     cardDiv.classList.add("carteshp"); // chaque carte = "carteshp"
     cardDiv.setAttribute("data-house", element.house);
+    
 
     const heart = document.createElement("i");
     heart.classList.add("fa-solid", "fa-heart");
     cardDiv.appendChild(heart);
 
-    
-    cardDiv.innerHTML += `
+    cardDiv.innerHTML += 
+    `
     <img src="${element.image}" alt="${element.name}"/>
         <h2>${element.name}</h2>
     `
@@ -82,7 +84,6 @@ displayHP("characters")
 
 
 
-
 //MArche pas a régler important jcrois
 //  function Page() {
 //     const liien = document.querySelector(".cartehp");
@@ -117,6 +118,17 @@ displayHP("characters")
 //     });
 // }
 
+fetch("https://localhost:3000/user/draw", {
+    method: "POST",
+    headrers: {
+        "Content-Type": "application/json",
+        "x-access-token": localStorage.getItem("token"), //token pr que personne co puisse tirer des cartes
+    },
+
+    body: JSON.stringify({
+        characters: characters,
+    }),
+});
 
 
 

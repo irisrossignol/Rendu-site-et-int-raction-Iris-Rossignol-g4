@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   darkMode();
 });
 
+
 // Tabs
 // function tabNav() {
 //   const tabBouton = document.querySelectorAll(".account_tab_button");
@@ -109,10 +110,6 @@ document.getElementById('fermer').addEventListener('click', function(event) {
   document.getElementById('popupForm').style.display = 'none';
   
 });
-
-
-
-
 
 
 
