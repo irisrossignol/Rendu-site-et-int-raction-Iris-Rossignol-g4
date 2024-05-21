@@ -1,56 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/front/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Connexion</title>
-  
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a id="logo" href="index.html">
-          <img src="/front/Images/Logo.png" alt="Logo" />
-        </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <title>Connexion</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="logo" href="index.html">
+                    <img src="./Images/Logo.png" alt="Logo" />
+                </a>
 
-        <ul class="navGrand">
-          <li><a class="barnav" href="index.html">CARTES</a></li>
-          <li><a class="barnav" href="profil.html">PROFIL</a></li>
-          <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
-        </ul>
+                <ul class="navGrand">
+                    <li><a class="barnav" href="index.html">CARTES</a></li>
+                    <li><a class="barnav" href="profil.html">PROFIL</a></li>
+                    <li>
+                        <a class="barnav" href="connexion.html">CONNEXION</a>
+                    </li>
+                </ul>
 
-        <ul class="navPetit">
-          <li> <a class="barnav" href="index.html"><i class="fa-solid fa-house"></i></a></li>
-          <li> <a class="barnav" href="profil.html"><i class="fa-solid fa-user"></i></a></li>
-          <li> <a class="barnav" href="connexion.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+                <ul class="navPetit">
+                    <li>
+                        <a class="barnav" href="index.html"
+                            ><i class="fa-solid fa-house"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="barnav" href="profil.html"
+                            ><i class="fa-solid fa-user"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="barnav" href="connexion.html"
+                            ><i class="fa-solid fa-right-to-bracket"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h2 class="dispo">
+                    Les boosters sont disponibles toutes les 24h
+                </h2>
+                <button class="button_form3">Ouvrir un booster</button>
+            </div>
 
-
-        <div>
-            <h2 class="dispo">Les boosters sont disponibles toutes les 24h</h2>
-            <button class="button_form3" >Ouvrir un booster</button>
-        </div>
-
-      <div class="cartes">
-        <div class="cartehp" id="characters"></div>
-      </div>
-
-
-
-    </main>
-    <footer>
-      <div class="foot">
-        <p>
-          Un problème ? Une question ? <a href="contact.html">Contactez-nous</a>
-        </p>
-      </div>
-    </footer>
-    <script src="/front/Javascript/main.js"></script>
-    <script src="/front/Javascript/booster.js"></script>
-  </body>
+            <div class="cartes">
+                <div class="cartehp" id="characters"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <p>
+                    Un problème ? Une question ?
+                    <a href="contact.html">Contactez-nous</a>
+                </p>
+            </div>
+        </footer>
+        <script src="./Javascript/main.js"></script>
+        <script src="./Javascript/booster.js"></script>
+    </body>
 </html>

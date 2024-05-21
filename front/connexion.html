@@ -1,73 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/front/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Connexion</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a id="logo" href="index.html">
-          <img src="/front/Images/Logo.png" alt="Logo" />
-        </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <title>Connexion</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="logo" href="index.html">
+                    <img src="./Images/Logo.png" alt="Logo" />
+                </a>
 
-        <ul class="navGrand">
-          <li><a class="barnav" href="index.html">CARTES</a></li>
-          <li><a class="barnav" href="profil.html">PROFIL</a></li>
-          <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
-        </ul>
+                <ul class="navGrand">
+                    <li><a class="barnav" href="index.html">CARTES</a></li>
+                    <li><a class="barnav" href="profil.html">PROFIL</a></li>
+                    <li>
+                        <a class="barnav" href="connexion.html">CONNEXION</a>
+                    </li>
+                </ul>
 
-        <ul class="navPetit">
-          <li> <a class="barnav" href="index.html"><i class="fa-solid fa-house"></i></a></li>
-          <li> <a class="barnav" href="profil.html"><i class="fa-solid fa-user"></i></a></li>
-          <li> <a class="barnav" href="connexion.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- <div class="darkmode-btn">
+                <ul class="navPetit">
+                    <li>
+                        <a class="barnav" href="index.html"
+                            ><i class="fa-solid fa-house"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="barnav" href="profil.html"
+                            ><i class="fa-solid fa-user"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="barnav" href="connexion.html"
+                            ><i class="fa-solid fa-right-to-bracket"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- <div class="darkmode-btn">
         <h1>Light Mode</h1>
       </div> -->
 
+            <div class="formulaire">
+                <form class="formu">
+                    <h1 class="titre-inscon">CONNEXION</h1>
+                    <p class="email">
+                        <label for="email">Email :</label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="email"
+                            required
+                        />
+                    </p>
+                    <p class="password">
+                        <label for="password">Mot de passe :</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="password"
+                            required
+                        />
+                    </p>
+                    <p class="envoyer">
+                        <button
+                            class="button_form"
+                            type="button"
+                            onclick="login()"
+                        >
+                            Connexion
+                        </button>
+                    </p>
+                    <p class="question">Pas de compte ?</p>
+                    <p>
+                        <a class="clic" href="inscription.html"
+                            >Inscrivez-vous</a
+                        >
+                    </p>
+                </form>
+            </div>
 
-
-      <div class="formulaire">
-        <form class="formu">
-          <h1 class="titre-inscon">CONNEXION</h1>
-          <p class="email">
-            <label for="email">Email :</label>
-            <input type="text" id="email" name="email" placeholder="email" required/>
-          </p>
-          <p class="password">
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" name="password" placeholder="password" required />
-          </p>
-          <p class="envoyer">
-            <button class="button_form" type="button" onclick="login()">Connexion</button>
-          </p>
-          <p class="question">Pas de compte ?</p>
-          <p><a class="clic" href="inscription.html">Inscrivez-vous</a></p>
-        </form>
-      </div>
-
-      <!-- <div id="userInfo" >
+            <!-- <div id="userInfo" >
         <h1><p>Pseudo:<span id="pseudo"></span></p></h1>
         <h1><p>Email:<span id="email"></span></p></h1>
     </div> -->
-
-    </main>
-    <footer>
-      <div class="foot">
-        <p>
-          Un problème ? Une question ? <a href="contact.html">Contactez-nous</a>
-        </p>
-      </div>
-    </footer>
-    <script src="/front/Javascript/main.js"></script>
-    <script src="/front/Javascript/scriptConnex.js"></script>
-    <!-- <script src="/Javascript/SciptUser.js"></script> -->
-  </body>
+        </main>
+        <footer>
+            <div class="foot">
+                <p>
+                    Un problème ? Une question ?
+                    <a href="contact.html">Contactez-nous</a>
+                </p>
+            </div>
+        </footer>
+        <script src="./Javascript/main.js"></script>
+        <script src="./Javascript/scriptConnex.js"></script>
+        <!-- <script src="/Javascript/SciptUser.js"></script> -->
+    </body>
 </html>

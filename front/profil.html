@@ -1,82 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/front/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Profil</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a id="logo" href="index.html"> <img src="/front/Images/Logo.png" alt="Logo"> </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <title>Profil</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="logo" href="index.html">
+                    <img src="./Images/Logo.png" alt="Logo" />
+                </a>
 
-        <ul class="navGrand">
-          <li><a class="barnav" href="index.html">CARTES</a></li>
-          <li><a class="barnav" href="profil.html">PROFIL</a></li>
-          <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
-        </ul>
+                <ul class="navGrand">
+                    <li><a class="barnav" href="index.html">CARTES</a></li>
+                    <li><a class="barnav" href="profil.html">PROFIL</a></li>
+                    <li>
+                        <a class="barnav" href="connexion.html">CONNEXION</a>
+                    </li>
+                </ul>
 
-        <ul class="navPetit">
-          <li> <a class="barnav" href="index.html"><i class="fa-solid fa-house"></i></a></li>
-          <li> <a class="barnav" href="profil.html"><i class="fa-solid fa-user"></i></a></li>
-          <li> <a class="barnav" href="connexion.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-        </ul>
-          </nav>
+                <ul class="navPetit">
+                    <li>
+                        <a class="barnav" href="index.html"
+                            ><i class="fa-solid fa-house"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="barnav" href="profil.html"
+                            ><i class="fa-solid fa-user"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="barnav" href="connexion.html"
+                            ><i class="fa-solid fa-right-to-bracket"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
+            <div class="profil-container">
+                <div class="darkmode-btn">
+                    <h1>Light Mode</h1>
+                </div>
 
-          <div class="profil-container">
-            <div class="darkmode-btn">
-              <h1>Light Mode</h1>
-            </div>
+                <img
+                    class="pdp"
+                    src="./Images/profil.webp"
+                    alt="Photo de profil"
+                />
+                <div>
+                    <p class="spann">Pseudo : <span id="pseudo"></span></p>
+                    <p class="spann">E-mail : <span id="email"></span></p>
+                    <!-- <p class="spann">House : <span id="house"></span></p> -->
 
-
-            <img class="pdp" src="/front/Images/profil.webp" alt="Photo de profil" />
-          <div>
-            <p class="spann">Pseudo : <span id="pseudo"></span></p>
-            <p class="spann">E-mail : <span id="email"></span></p>
-            <!-- <p class="spann">House : <span id="house"></span></p> -->
-
-
-                    <!--<img id="maison" src="/Images/Gryff.png" alt="Logo maison"> 
+                    <!--<img id="maison" src="/Images/Gryff.png" alt="Logo maison">
       class="house">Gryffondor</p> -->
-            
+                </div>
             </div>
-        </div>
-      <div class="title_cards_container">
-      <h1>Mes cartes :</h1>
-      </div>
+            <div class="title_cards_container">
+                <h1>Mes cartes :</h1>
+            </div>
 
+            <div class="filter">
+                <button
+                    id="tousBouton"
+                    class="btnfiltre select"
+                    data-house="Tous"
+                >
+                    Toutes les cartes
+                </button>
+                <button
+                    id="GryffondorBouton"
+                    class="btnfiltre"
+                    data-house="Gryffindor"
+                >
+                    Gryffondor
+                </button>
+                <button
+                    id="SerpentardBouton"
+                    class="btnfiltre"
+                    data-house="Slytherin"
+                >
+                    Serpentard
+                </button>
+                <button
+                    id="SerdaigleBouton"
+                    class="btnfiltre"
+                    data-house="Ravenclaw"
+                >
+                    Serdaigle
+                </button>
+                <button
+                    id="PouffsoufleBouton"
+                    class="btnfiltre"
+                    data-house="Hufflepuff"
+                >
+                    Poufsouffle
+                </button>
+            </div>
 
-      <div class="filter">
-        <button id="tousBouton" class="btnfiltre select" data-house="Tous">
-          Toutes les cartes
-        </button>
-        <button id="GryffondorBouton" class="btnfiltre" data-house="Gryffindor">
-          Gryffondor
-        </button>
-        <button id="SerpentardBouton" class="btnfiltre" data-house="Slytherin">
-          Serpentard
-        </button>
-        <button id="SerdaigleBouton" class="btnfiltre" data-house="Ravenclaw">
-          Serdaigle
-        </button>
-        <button id="PouffsoufleBouton" class="btnfiltre" data-house="Hufflepuff">
-          Poufsouffle
-        </button>
-      </div>
+            <div class="cartes">
+                <div class="cartehp" id="characters"></div>
+            </div>
 
-
- 
-    <div class="cartes" >
-      <div class="cartehp" id="characters"></div>
-    </div>
-
-
-
-      <!-- <div class="cartes">
+            <!-- <div class="cartes">
       <div class="card_container Gryffindor" data-house="Gryffondor">
         <img src="/front/Images/Ron.png" alt="Ron Weasley" />
       </div>
@@ -86,15 +120,17 @@
       <div class="card_container Slytherin" data-house="Serpentard">
         <img src="/front/Images/Sirius.png" alt="Sirius Black" />
       </div> -->
-
-    </main>
-    <footer>
-      <div class="foot">
-<p>Un problème ? Une question ? <a href="contact.html">Contactez-nous</a> </p>
-      </div>
-    </footer>
-    <script src="/front/Javascript/main.js"></script>
-    <script src="/front/Javascript/scriptUser.js"></script>
-    <script src="/front/Javascript/testPro.js"></script>
-  </body>
+        </main>
+        <footer>
+            <div class="foot">
+                <p>
+                    Un problème ? Une question ?
+                    <a href="contact.html">Contactez-nous</a>
+                </p>
+            </div>
+        </footer>
+        <script src="./Javascript/main.js"></script>
+        <script src="./Javascript/scriptUser.js"></script>
+        <script src="./Javascript/testPro.js"></script>
+    </body>
 </html>

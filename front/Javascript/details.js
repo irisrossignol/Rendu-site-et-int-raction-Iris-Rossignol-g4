@@ -1,14 +1,18 @@
-function fetchHP(id) {
+function fetchDetails(slug) {
 
-    return fetch('https://hp-api.lainocs.fr/characters/' + id)
+    return fetch(`https://hp-api.lainocs.fr/characters/${slug}`)
     .then((response)=> response.json())
 }
 
-async function displayHP(id, elementId) {
-    const data = await fetchHP(id)
-    let date = data.birthday.slice(0,-14)
-    document.getElementById(elementId).innerHTML = `
-        <img src="${data.image}" alt="${data.name}"/>
+async function displayDetails() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('slug');
+    const data = await fetchDetails(slug);
+    const container = document.getElementById('character-details');
+
+    // let date = data.birthday.slice(0,-14)
+
+    container.innerHTML = `
         <h1>Name : ${data.name}</h1>
         <h1>Hairs : ${data.hairs}</h1>
         <h1>Eye color : ${data.eyes}</h1>
@@ -20,4 +24,4 @@ async function displayHP(id, elementId) {
 ` ;
 }
 
-displayHP('harry-potter', 'harry')
+document.addEventListener('DOMContentLoaded', displayDetails);

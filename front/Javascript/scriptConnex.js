@@ -1,8 +1,8 @@
-
-
 const login = async () => {
-    let email = document.querySelector('input[name="email"]').value
-    let password = document.querySelector('input[name="password"]').value
+    let email = document.querySelector('#email')
+    let password = document.querySelector('#password')
+
+    console.log(email, password)
 
     let response = await fetch('http://localhost:3000/auth/login' , {
         method: 'POST',
@@ -10,17 +10,22 @@ const login = async () => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            email: email,
-            password: password,
+            email: email.value,
+            password: password.value,
         }),
     })
 
-    let data = await response.json()
-    console.log(data)
-    localStorage.setItem('token', data.token)
+    if (response.status !== 200) {
+        console.log('erreur')
+        window.location.href = 'connexion.html'
+    }
+    else {
 
-    localStorage.setItem('email', email) //pas compris marche pas
-
-    window.location.href = 'profil.html'
+        let data = await response.json()
+        console.log(data)
+        localStorage.setItem('token', data.token)
+        localStorage.setItem('email', email)
+        window.location.href = 'profil.html'
+    }
 
 }

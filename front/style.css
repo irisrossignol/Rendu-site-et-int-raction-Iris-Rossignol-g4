@@ -193,14 +193,16 @@ img {
 
 h1 {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: sans-serif;
 }
 
 h2 {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
+
 
 .title_cards_container {
   background-color: rgb(16, 19, 32);
@@ -229,6 +231,8 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
+  color: white;
+  text-decoration: none;
 }
 
 .titre-inscon {
@@ -664,12 +668,16 @@ margin-bottom: 2rem;
   border-bottom: 50px #05061c solid;
   border-right: 20px #05061c solid;
   border-top: 20px #05061c solid;
+  color: white;
+  text-decoration: none;
 }
 
 .cartehp {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-around; 
+  color: white;
+  text-decoration: none;
 }
 
 /* .gryffindor-border {

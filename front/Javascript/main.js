@@ -3,9 +3,13 @@ function darkMode() {
   const darkModeButton = document.querySelector(".darkmode-btn");
   const body = document.querySelector("body");
 
+  if (!darkModeButton) {
+    return;
+  }
+
   function darkModeActif() {
     body.classList.add("darkmode");
-    localStorage.setItem("darkMode", "actif"); 
+    localStorage.setItem("darkMode", "actif");
     darkModeButton.textContent = "Dark Mode";
     darkModeButton.classList.add("moon");
   }
@@ -21,21 +25,19 @@ function darkMode() {
     darkModeActif();
   }
 
-  darkModeButton.addEventListener("click", () => {  // a l'écoute du clic le darkmode "toggle"
+  darkModeButton.addEventListener("click", () => {
+    // a l'écoute du clic le darkmode "toggle"
     if (body.classList.toggle("darkmode")) {
       darkModeActif();
     } else {
       darkModeDes();
     }
   });
-;
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   darkMode();
 });
-
 
 // Tabs
 // function tabNav() {
@@ -59,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // }
 
-//Filtre 
-function Filtre() {
+//Filtre
+function filtre() {
   const boutonsFiltre = document.querySelectorAll(".btnfiltre");
 
   boutonsFiltre.forEach((bouton) => {
@@ -76,8 +78,6 @@ function Filtre() {
       cartes.forEach((carte) => {
         const Carte = carte.getAttribute("data-house");
 
-        
-
         carte.style.display =
           Selectionnee === "Tous" || Selectionnee === Carte ? "block" : "none"; // Afficher si la maison sélectionnée est "tous" ou si elle correspond à la maison de la carte actuelle ; sinon, masquer la carte
       });
@@ -85,34 +85,28 @@ function Filtre() {
   });
 }
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  tabNav();
-  Filtre();
+  filtre();
   // like();
 });
 
 //PopUp
-document.getElementById('popupForm').style.display = 'none';
+document.getElementById("popupForm").style.display = "none";
 
-document.getElementById('echange').addEventListener('click', function() {
-  document.getElementById('popupForm').style.display = 'block';
+document.getElementById("echange").addEventListener("click", function () {
+  document.getElementById("popupForm").style.display = "block";
 });
 
-document.getElementById('popupForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // dans le popup si on sbmit ca f rien
+document
+  .getElementById("popupForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // dans le popup si on sbmit ca f rien
+  });
+
+document.getElementById("fermer").addEventListener("click", function (event) {
+  event.preventDefault();
+  document.getElementById("popupForm").style.display = "none";
 });
-
-document.getElementById('fermer').addEventListener('click', function(event) {
-  event.preventDefault(); 
-  document.getElementById('popupForm').style.display = 'none';
-  
-});
-
-
-
 
 //Like
 // function like() {
@@ -125,18 +119,6 @@ document.getElementById('fermer').addEventListener('click', function(event) {
 //     });
 //   });
 // }
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Swipper
 /* document.addEventListener("DOMContentLoaded", function () {
@@ -209,7 +191,6 @@ document.getElementById('fermer').addEventListener('click', function(event) {
 //     return true;
 //   }
 // }
-
 
 /*username.addEventListener("input", validUsername);
 choice.addEventListener("change", validChoice);

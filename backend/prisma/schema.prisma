@@ -14,21 +14,22 @@ datasource db {
 }
 
 model User {
-    id            Int @id @default(autoincrement())
-    pseudo        String 
-    email         String @unique
-    password      String
+  id       Int       @id @default(autoincrement())
+  pseudo   String
+  email    String    @unique
+  password String
+  lastDraw DateTime?
 
-    UserCard UserCard[]
+  UserCard UserCard[]
 }
 
 model UserCard {
-  id        Int @id @default(autoincrement())
-  userId    Int
-  cardId    String
-  namecard  String
-  house     String
-  image     String
+  id       Int    @id @default(autoincrement())
+  userId   Int
+  cardId   String
+  namecard String
+  house    String
+  image    String
 
   User User @relation(fields: [userId], references: [id])
 }

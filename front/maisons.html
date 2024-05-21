@@ -1,44 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- slider avec internet // à enlever pour projet d'axe -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- fin -->
+        <!-- slider avec internet // à enlever pour projet d'axe -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- fin -->
 
-    <link rel="stylesheet" href="/front/style.css" />
-    <title>Accueil</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a id="logo" href="index.html">
-          <img src="/front/Images/Logo.png" alt="Logo" />
-        </a>
-        <ul>
-          <li><a class="barnav" href="index.html">CARTES</a></li>
-          <!-- <li><a class="barnav" href="personages.html">PERSONNAGES</a></li> -->
-          <!-- <li><a class="barnav" href="maisons.html">MAISONS</a></li> -->
-          <li><a class="barnav" href="profil.html">PROFIL</a></li>
-          <li><a class="barnav" href="connexion.html">CONNEXION</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- <div class="darkmode-btn">
+        <link rel="stylesheet" href="./style.css" />
+        <title>Accueil</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="logo" href="index.html">
+                    <img src="./Images/Logo.png" alt="Logo" />
+                </a>
+                <ul>
+                    <li><a class="barnav" href="index.html">CARTES</a></li>
+                    <!-- <li><a class="barnav" href="personages.html">PERSONNAGES</a></li> -->
+                    <!-- <li><a class="barnav" href="maisons.html">MAISONS</a></li> -->
+                    <li><a class="barnav" href="profil.html">PROFIL</a></li>
+                    <li>
+                        <a class="barnav" href="connexion.html">CONNEXION</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- <div class="darkmode-btn">
         <h1>Light Mode</h1>
       </div> -->
-       <!-- <div class="title_cards_container">
+            <!-- <div class="title_cards_container">
         <h1 class="title_cards">Les 4 maisons :</h1>
       </div>
 
-     slider avec internet // à enlever pour projet d'axe 
+     slider avec internet // à enlever pour projet d'axe
       <div class="swiper mon-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-red">
@@ -72,144 +74,165 @@
       </div>
        fin -->
 
-      <div class="title_cards_container">
-        <h1 class="title_cards">En savoir plus :</h1>
-      </div>
+            <div class="title_cards_container">
+                <h1 class="title_cards">En savoir plus :</h1>
+            </div>
 
-      <div class="tab_container">
-        <div class="tab">
-          <button class="account_tab_button active" data-maison="Gryff">
-            Gryffondor
-          </button>
-          <button class="account_tab_button" data-maison="Serp">
-            Serpentard
-          </button>
-          <button class="account_tab_button" data-maison="Serd">
-            Serdaigle
-          </button>
-          <button class="account_tab_button" data-maison="Pouff">
-            Poufsouffle
-          </button>
-        </div>
+            <div class="tab_container">
+                <div class="tab">
+                    <button
+                        class="account_tab_button active"
+                        data-maison="Gryff"
+                    >
+                        Gryffondor
+                    </button>
+                    <button class="account_tab_button" data-maison="Serp">
+                        Serpentard
+                    </button>
+                    <button class="account_tab_button" data-maison="Serd">
+                        Serdaigle
+                    </button>
+                    <button class="account_tab_button" data-maison="Pouff">
+                        Poufsouffle
+                    </button>
+                </div>
 
-        <div id="Gryff" class="tab_content active">
-          <h3>Gryffondor</h3>
-          <p>
-            La maison Gryffondor est l'une des quatre maisons de l'école de
-            sorcellerie de Poudlard. Elle est célèbre pour ses valeurs de
-            courage, de bravoure, de détermination et de noblesse d'esprit. Les
-            élèves de Gryffondor sont souvent décrits comme étant hardis,
-            audacieux et prêts à se battre pour ce en quoi ils croient.
-          </p>
-          <p>
-            Le fondateur de la maison Gryffondor est Godric Gryffondor lui-même,
-            l'un des quatre sorciers fondateurs de Poudlard. Le symbole de la
-            maison est un lion, représentant la bravoure et la force, et ses
-            couleurs sont le rouge et l'or. Le fantôme de la maison est le
-            courageux Sir Nicholas de Mimsy-Porpington, également connu sous le
-            nom de Nick Quasi-Sans-Tête.
-          </p>
-          <p>
-            Les membres les plus célèbres de Gryffondor incluent Harry Potter
-            lui-même, Hermione Granger et Ron Weasley, les trois personnages
-            principaux de la série. Gryffondor entretient une forte rivalité
-            avec la maison Serpentard, mais ses membres sont également connus
-            pour leur esprit sportif et leur engagement envers la justice et la
-            lutte contre les forces du mal.
-          </p>
-        </div>
+                <div id="Gryff" class="tab_content active">
+                    <h3>Gryffondor</h3>
+                    <p>
+                        La maison Gryffondor est l'une des quatre maisons de
+                        l'école de sorcellerie de Poudlard. Elle est célèbre
+                        pour ses valeurs de courage, de bravoure, de
+                        détermination et de noblesse d'esprit. Les élèves de
+                        Gryffondor sont souvent décrits comme étant hardis,
+                        audacieux et prêts à se battre pour ce en quoi ils
+                        croient.
+                    </p>
+                    <p>
+                        Le fondateur de la maison Gryffondor est Godric
+                        Gryffondor lui-même, l'un des quatre sorciers fondateurs
+                        de Poudlard. Le symbole de la maison est un lion,
+                        représentant la bravoure et la force, et ses couleurs
+                        sont le rouge et l'or. Le fantôme de la maison est le
+                        courageux Sir Nicholas de Mimsy-Porpington, également
+                        connu sous le nom de Nick Quasi-Sans-Tête.
+                    </p>
+                    <p>
+                        Les membres les plus célèbres de Gryffondor incluent
+                        Harry Potter lui-même, Hermione Granger et Ron Weasley,
+                        les trois personnages principaux de la série. Gryffondor
+                        entretient une forte rivalité avec la maison Serpentard,
+                        mais ses membres sont également connus pour leur esprit
+                        sportif et leur engagement envers la justice et la lutte
+                        contre les forces du mal.
+                    </p>
+                </div>
 
-        <div id="Serp" class="tab_content">
-          <h3>Serpentard</h3>
-          <p>
-            La maison Serpentard est l'une des quatre maisons de l'école de
-            sorcellerie de Poudlard. Elle est réputée pour ses valeurs telles
-            que l'ambition, la ruse, la détermination et l'esprit de leadership.
-            Les élèves de Serpentard sont souvent décrits comme étant astucieux,
-            déterminés et prêts à tout pour atteindre leurs objectifs.
-          </p>
-          <p>
-            Le fondateur de la maison Serpentard est Salazar Serpentard, l'un
-            des quatre sorciers fondateurs de Poudlard. Le symbole de la maison
-            est un serpent, représentant la ruse et l'intelligence, et ses
-            couleurs sont le vert et l'argent. Le fantôme de la maison est le
-            Baron Sanglant, dont le passé mystérieux est souvent évoqué.
-          </p>
-          <p>
-            Les membres les plus célèbres de Serpentard incluent Severus Rogue,
-            Draco Malefoy et Bellatrix Lestrange. Serpentard entretient une
-            forte rivalité avec Gryffondor, en particulier incarnée dans les
-            relations entre Harry Potter et Draco Malefoy. Malgré cette
-            rivalité, les membres de Serpentard sont également reconnus pour
-            leur loyauté envers leur maison et leurs camarades.
-          </p>
-        </div>
+                <div id="Serp" class="tab_content">
+                    <h3>Serpentard</h3>
+                    <p>
+                        La maison Serpentard est l'une des quatre maisons de
+                        l'école de sorcellerie de Poudlard. Elle est réputée
+                        pour ses valeurs telles que l'ambition, la ruse, la
+                        détermination et l'esprit de leadership. Les élèves de
+                        Serpentard sont souvent décrits comme étant astucieux,
+                        déterminés et prêts à tout pour atteindre leurs
+                        objectifs.
+                    </p>
+                    <p>
+                        Le fondateur de la maison Serpentard est Salazar
+                        Serpentard, l'un des quatre sorciers fondateurs de
+                        Poudlard. Le symbole de la maison est un serpent,
+                        représentant la ruse et l'intelligence, et ses couleurs
+                        sont le vert et l'argent. Le fantôme de la maison est le
+                        Baron Sanglant, dont le passé mystérieux est souvent
+                        évoqué.
+                    </p>
+                    <p>
+                        Les membres les plus célèbres de Serpentard incluent
+                        Severus Rogue, Draco Malefoy et Bellatrix Lestrange.
+                        Serpentard entretient une forte rivalité avec
+                        Gryffondor, en particulier incarnée dans les relations
+                        entre Harry Potter et Draco Malefoy. Malgré cette
+                        rivalité, les membres de Serpentard sont également
+                        reconnus pour leur loyauté envers leur maison et leurs
+                        camarades.
+                    </p>
+                </div>
 
-        <div id="Serd" class="tab_content">
-          <h3>Serdaigle</h3>
-          <p>
-            La maison Serdaigle est l'une des quatre maisons de l'école de
-            sorcellerie de Poudlard. Elle est célèbre pour ses valeurs
-            d'intelligence, de sagesse, de créativité et de curiosité
-            intellectuelle. Les élèves de Serdaigle sont souvent décrits comme
-            étant intellectuels, réfléchis et passionnés par l'apprentissage.
-          </p>
-          <p>
-            Le fondateur de la maison Serdaigle est Rowena Serdaigle, l'un des
-            quatre sorciers fondateurs de Poudlard. Le symbole de la maison est
-            un aigle, représentant la clairvoyance et la perspicacité, et ses
-            couleurs sont le bleu et le bronze. Le fantôme de la maison est la
-            Dame Grise, une femme élégante et énigmatique qui erre dans les
-            couloirs de Poudlard.
-          </p>
-          <p>
-            Les membres les plus célèbres de Serdaigle incluent Luna Lovegood,
-            Cho Chang et Filius Flitwick. Serdaigle est souvent considérée comme
-            la maison des érudits et des esprits créatifs, mettant l'accent sur
-            l'exploration intellectuelle et la découverte de la vérité. Les
-            élèves de Serdaigle sont encouragés à penser de manière critique, à
-            remettre en question les idées préconçues et à rechercher la
-            connaissance dans tous les domaines.
-          </p>
-        </div>
+                <div id="Serd" class="tab_content">
+                    <h3>Serdaigle</h3>
+                    <p>
+                        La maison Serdaigle est l'une des quatre maisons de
+                        l'école de sorcellerie de Poudlard. Elle est célèbre
+                        pour ses valeurs d'intelligence, de sagesse, de
+                        créativité et de curiosité intellectuelle. Les élèves de
+                        Serdaigle sont souvent décrits comme étant
+                        intellectuels, réfléchis et passionnés par
+                        l'apprentissage.
+                    </p>
+                    <p>
+                        Le fondateur de la maison Serdaigle est Rowena
+                        Serdaigle, l'un des quatre sorciers fondateurs de
+                        Poudlard. Le symbole de la maison est un aigle,
+                        représentant la clairvoyance et la perspicacité, et ses
+                        couleurs sont le bleu et le bronze. Le fantôme de la
+                        maison est la Dame Grise, une femme élégante et
+                        énigmatique qui erre dans les couloirs de Poudlard.
+                    </p>
+                    <p>
+                        Les membres les plus célèbres de Serdaigle incluent Luna
+                        Lovegood, Cho Chang et Filius Flitwick. Serdaigle est
+                        souvent considérée comme la maison des érudits et des
+                        esprits créatifs, mettant l'accent sur l'exploration
+                        intellectuelle et la découverte de la vérité. Les élèves
+                        de Serdaigle sont encouragés à penser de manière
+                        critique, à remettre en question les idées préconçues et
+                        à rechercher la connaissance dans tous les domaines.
+                    </p>
+                </div>
 
-        <div id="Pouff" class="tab_content">
-          <h3>Poufsouffle</h3>
-          <p>
-            La maison Poufsouffle est l'une des quatre maisons de l'école de
-            sorcellerie de Poudlard. Elle est célèbre pour ses valeurs de
-            loyauté, de travail acharné, de justice et de patience. Les élèves
-            de Poufsouffle sont souvent décrits comme étant gentils, généreux et
-            respectueux envers les autres.
-          </p>
-          <p>
-            Le fondateur de la maison Poufsouffle est Helga Poufsouffle, l'un
-            des quatre sorciers fondateurs de Poudlard. Le symbole de la maison
-            est un blaireau, représentant la patience et la persévérance, et ses
-            couleurs sont le jaune et le noir. Le fantôme de la maison est le
-            Moine Gras, un moine jovial qui se manifeste occasionnellement pour
-            encourager les élèves.
-          </p>
-          <p>
-            Les membres les plus célèbres de Poufsouffle incluent Cedric
-            Diggory, Nymphadora Tonks et Newton Scamander. Poufsouffle est
-            souvent considérée comme la maison la plus inclusive et accueillante
-            de Poudlard, mettant l'accent sur l'importance de l'amitié, du
-            travail d'équipe et du respect mutuel. Bien que souvent négligée par
-            rapport aux autres maisons, Poufsouffle est une maison où chaque
-            élève est valorisé pour ses qualités uniques et ses contributions à
-            la communauté.
-          </p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="foot">
-        <p>
-          Un problème ? Une question ? <a href="contact.html">Contactez-nous</a>
-        </p>
-      </div>
-    </footer>
-    <script src="/front/Javascript/main.js"></script>
-  </body>
+                <div id="Pouff" class="tab_content">
+                    <h3>Poufsouffle</h3>
+                    <p>
+                        La maison Poufsouffle est l'une des quatre maisons de
+                        l'école de sorcellerie de Poudlard. Elle est célèbre
+                        pour ses valeurs de loyauté, de travail acharné, de
+                        justice et de patience. Les élèves de Poufsouffle sont
+                        souvent décrits comme étant gentils, généreux et
+                        respectueux envers les autres.
+                    </p>
+                    <p>
+                        Le fondateur de la maison Poufsouffle est Helga
+                        Poufsouffle, l'un des quatre sorciers fondateurs de
+                        Poudlard. Le symbole de la maison est un blaireau,
+                        représentant la patience et la persévérance, et ses
+                        couleurs sont le jaune et le noir. Le fantôme de la
+                        maison est le Moine Gras, un moine jovial qui se
+                        manifeste occasionnellement pour encourager les élèves.
+                    </p>
+                    <p>
+                        Les membres les plus célèbres de Poufsouffle incluent
+                        Cedric Diggory, Nymphadora Tonks et Newton Scamander.
+                        Poufsouffle est souvent considérée comme la maison la
+                        plus inclusive et accueillante de Poudlard, mettant
+                        l'accent sur l'importance de l'amitié, du travail
+                        d'équipe et du respect mutuel. Bien que souvent négligée
+                        par rapport aux autres maisons, Poufsouffle est une
+                        maison où chaque élève est valorisé pour ses qualités
+                        uniques et ses contributions à la communauté.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <p>
+                    Un problème ? Une question ?
+                    <a href="contact.html">Contactez-nous</a>
+                </p>
+            </div>
+        </footer>
+        <script src="./Javascript/main.js"></script>
+    </body>
 </html>
