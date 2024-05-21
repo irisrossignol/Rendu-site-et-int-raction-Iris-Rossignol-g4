@@ -1,43 +1,4 @@
-// Darkmode   ☾☾☼☀︎
-function darkMode() {
-  const darkModeButton = document.querySelector(".darkmode-btn");
-  const body = document.querySelector("body");
 
-  if (!darkModeButton) {
-    return;
-  }
-
-  function darkModeActif() {
-    body.classList.add("darkmode");
-    localStorage.setItem("darkMode", "actif");
-    darkModeButton.textContent = "Dark Mode";
-    darkModeButton.classList.add("moon");
-  }
-
-  function darkModeDes() {
-    body.classList.remove("darkmode");
-    localStorage.setItem("darkMode", ""); //darkmode (light) pas actif
-    darkModeButton.textContent = "Light Mode";
-    darkModeButton.classList.add("sun");
-  }
-
-  if (localStorage.getItem("darkMode") === "actif") {
-    darkModeActif();
-  }
-
-  darkModeButton.addEventListener("click", () => {
-    // a l'écoute du clic le darkmode "toggle"
-    if (body.classList.toggle("darkmode")) {
-      darkModeActif();
-    } else {
-      darkModeDes();
-    }
-  });
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  darkMode();
-});
 
 // Tabs
 // function tabNav() {
@@ -85,8 +46,48 @@ function filtre() {
   });
 }
 
+
+// Darkmode   ☾☾☼☀︎
+function darkMode() {
+  const darkModeButton = document.querySelector(".darkmode-btn");
+  const body = document.querySelector("body");
+
+  if (!darkModeButton) {
+    return;
+  }
+
+  function darkModeActif() {
+    body.classList.add("darkmode");
+    localStorage.setItem("darkMode", "actif");
+    darkModeButton.textContent = "Dark Mode";
+    darkModeButton.classList.add("moon");
+  }
+
+  function darkModeDes() {
+    body.classList.remove("darkmode");
+    localStorage.setItem("darkMode", ""); //darkmode (light) pas actif
+    darkModeButton.textContent = "Light Mode";
+    darkModeButton.classList.add("sun");
+  }
+
+  if (localStorage.getItem("darkMode") === "actif") {
+    darkModeActif();
+  }
+
+  darkModeButton.addEventListener("click", () => {
+    // a l'écoute du clic le darkmode "toggle"
+    if (body.classList.toggle("darkmode")) {
+      darkModeActif();
+    } else {
+      darkModeDes();
+    }
+  });
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
   filtre();
+  darkMode();
   // like();
 });
 

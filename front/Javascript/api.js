@@ -25,7 +25,7 @@ async function displayHP(elementId) {
     // `
 
     cardDiv.innerHTML += `
-    <a href="details.html?id=${element.id}">
+    <a href="details.html?slug=${element.slug}">
         <img src="${element.image}" alt="${element.name}"/>
         <h2>${element.name}</h2>
     </a>
