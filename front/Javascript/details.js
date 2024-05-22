@@ -1,19 +1,20 @@
 
 function fetchDetails(slug) {
 
+    //fetch recupere les ressources de l'api
     return fetch(`https://hp-api.lainocs.fr/characters/${slug}`)
     .then((response)=> response.json())
 }
 
 async function displayDetails() {
-    const params = new URLSearchParams(window.location.search);
-    const slug = params.get('slug');
+    const params = new URLSearchParams(window.location.search); //change l'url en fonction de 
+    const slug = params.get('slug');  //prend le slug de l'api
     console.log(slug)
-    const data = await fetchDetails(slug);
+    const data = await fetchDetails(slug); 
     const container = document.getElementById('character-details');
 
 
-    let date = data.birthday.slice(0,-14)
+    let date = data.birthday.slice(0,-14) //cala pas les 14 dernier trucs
 
     container.innerHTML = `
         <img src="${data.image}" alt="${data.name} class="ccard"/>

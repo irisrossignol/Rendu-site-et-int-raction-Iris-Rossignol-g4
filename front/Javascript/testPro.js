@@ -1,7 +1,9 @@
+//Afficher les cartes dans profil
+
 function fetchHP() {
   const token = localStorage.getItem("token");
   if (!token) {
-    window.location.href = "connexion.html";
+    window.location.href = "connexion.html"; //si pas connecter alors redirection connex
     return;
   }
 
@@ -13,20 +15,20 @@ function fetchHP() {
     },
   })
     .then((response) => {
-      if (response.status !== 200) {
+      if (response.status !== 200) { //si erreur alors redirection connex
         window.location.href = "connexion.html";
         return;
       }
       return response.json();
     })
     .then((characters) => {
-      if (!characters) return; // Si la redirection a eu lieu, characters sera undefined
+      if (!characters) return;
 
       console.log(characters);
       const container = document.getElementById("characters");
-      container.innerHTML = ""; // Clear the container each time
+      container.innerHTML = ""; 
 
-      characters.forEach((character) => {
+      characters.forEach((character) => { //pr chaque cartes on affiche tt la cartes quoi
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("carteshp");
         cardDiv.setAttribute("data-house", character.house);
@@ -44,5 +46,4 @@ function fetchHP() {
     });
 }
 
-// Call the function to fetch and display cards
 fetchHP();

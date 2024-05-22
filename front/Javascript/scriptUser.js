@@ -15,4 +15,4 @@ fetch('http://localhost:3000/user/' , {
 
     document.getElementById('pseudo').textContent = data.pseudo;
     document.getElementById('email').textContent = data.email;
-})
+})//afficher les data de l'user si token trouvé

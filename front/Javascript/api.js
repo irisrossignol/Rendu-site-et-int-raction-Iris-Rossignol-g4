@@ -1,29 +1,27 @@
 
 function fetchHP() {
 
+    //fetch recupere les ressources de l'api
     return fetch('https://hp-api.lainocs.fr/characters/')
     .then((response)=> response.json())
 }
 
+//async ne se passe pas en meme temps genre le await va se faire que si ce qu'il y a avant est exécuté ?? jcrois ??
 async function displayHP(elementId) {
     const data = await fetchHP()
     const container=document.getElementById(elementId)
 
     data.forEach(element => {
     const cardDiv = document.createElement("div"); // chaque carte = une div
-    cardDiv.classList.add("carteshp"); // chaque carte = "carteshp"
-    cardDiv.setAttribute("data-house", element.house);
+    cardDiv.classList.add("carteshp"); // chaque carte class = "carteshp"
+    cardDiv.setAttribute("data-house", element.house); //chaque div donc carte = "data.house" et la data attribué dans l'api
 
-    const heart = document.createElement("i");
+    const heart = document.createElement("i"); //image coeur
     heart.classList.add("fa-solid", "fa-heart");
     cardDiv.appendChild(heart);
 
-    
-    // cardDiv.innerHTML += `
-    // <img src="${element.image}" alt="${element.name}"/>
-    //     <h2>${element.name}</h2>
-    // `
 
+    //Chaque Cartes a ces element à afficher
     cardDiv.innerHTML += `
     <a href="details.html?slug=${element.slug}">
         <img src="${element.image}" alt="${element.name}"/>
@@ -31,6 +29,7 @@ async function displayHP(elementId) {
     </a>
 `;
 
+//c'etait pour faire les bordure de carte de differentes couleur, ca a marché mais c'etait trop moche
     // if (element.house === "Gryffindor") {
     //     cardDiv.classList.add("gryffindor-border");
     // }
@@ -46,16 +45,6 @@ async function displayHP(elementId) {
 
     container.appendChild(cardDiv); // cardDiv c dans container
     });
-
-
-
-    
-// let date = data.birthday.slice(0,-14)
-//     document.getElementById(elementId).innerHTML = `
-//         <img src="${data.image}" alt="${data.name}"/>
-//         <h1>${data.name}</h1>
-//         <h1>${data.house}</h1> 
-// ` ;
 
 const like = document.querySelectorAll(".fa-heart");
 
@@ -89,25 +78,7 @@ displayHP("characters")
 
 
 
-
-//MArche pas a régler important jcrois
-//  function Page() {
-//     const liien = document.querySelector(".cartehp");
-//     const characterId = data.id;
-
-//     liien.forEach((lien) => {
-//     lien.addEventListener("click", () => {
-//     window.location.href = `page.html?id=${characterId}`;
-
-//      });
-// });
-// }
-
-
-
-
-
-//searchBar
+//searchBar rien compris euh
 // function searchBar() {
 //     const bar = document.querySelectorAll(".rech");
 //     const input = document.getElementById("myInput"); //jcrois ca prend ce qu'il y a ecrit ?? pas trop compris lol

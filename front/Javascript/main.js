@@ -1,5 +1,6 @@
 
 
+//marche mais innutile
 // Tabs
 // function tabNav() {
 //   const tabBouton = document.querySelectorAll(".account_tab_button");
@@ -88,7 +89,6 @@ function darkMode() {
 document.addEventListener("DOMContentLoaded", function () {
   filtre();
   darkMode();
-  // like();
 });
 
 //PopUp
@@ -109,17 +109,6 @@ document.getElementById("fermer").addEventListener("click", function (event) {
   document.getElementById("popupForm").style.display = "none";
 });
 
-//Like
-// function like() {
-//   const like = document.querySelectorAll(".like");
-
-//   like.forEach((liked) =>{
-//     liked.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       liked.clasList.toggle("select");
-//     });
-//   });
-// }
 
 //Swipper
 /* document.addEventListener("DOMContentLoaded", function () {

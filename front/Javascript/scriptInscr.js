@@ -2,7 +2,7 @@
 form = document.querySelector('form')
 
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", (event) => { //ya un evenement au submit
   event.preventDefault();
   let pseudo = document.querySelector('#pseudo').value;
   let email = document.querySelector('#email').value;

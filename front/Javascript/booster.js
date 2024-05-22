@@ -1,4 +1,6 @@
 function fetchHP() {
+
+  //fetch recupere les ressources de l'api
   return fetch("https://hp-api.lainocs.fr/characters/").then((response) =>
     response.json(),
   );
@@ -7,7 +9,7 @@ function fetchHP() {
 //les cartes
 async function displayHP(elementId, characters) {
   const container = document.getElementById(elementId);
-  container.innerHTML = ""; // recharger a chaque fois
+  container.innerHTML = ""; // recharger a chaque fois, 5 nouvelles cartes
 
   characters.forEach((element) => {
     const cardDiv = document.createElement("div");
@@ -34,20 +36,19 @@ async function booster() {
   }
 
   // envoie les cartes dans le backend pour les enregistrer dans la table userCard
-
   fetch("http://localhost:3000/user/draw", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-access-token": localStorage.getItem("token"),
+      "x-access-token": localStorage.getItem("token"), // un compte
     },
 
-    body: JSON.stringify({
+    body: JSON.stringify({ //converti js en json 
       characters: characters,
     }),
   });
 
-  displayHP("characters", characters);
+  displayHP("characters", characters); // afficher les 5 cartes du booster
 }
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,13 +1,16 @@
+
+//sert a ajouté informations a user quand il est decoded  
+
 import jwt from "jsonwebtoken";
 
 const authenticateToken = async (req, res, next) => {
 
-  const token = req.headers["x-access-token"];
+  const token = req.headers["x-access-token"]; //prendre le token
 
 
-  if (!token || token === "null" || token === "undefined") {
+  if (!token || token === "null" || token === "undefined") { 
 
-   return res.status(401).json({ error: "No token provided" });
+   return res.status(401).json({ error: "No token provided" }); //si pas token erreuer
   }
 
 
@@ -15,7 +18,7 @@ const authenticateToken = async (req, res, next) => {
 
     if (err) {
       console.log("token invalide", err);
-      return res.status(401).json({ error: "No token provided" });
+      return res.status(401).json({ error: "No token provided" }); 
     }
 
     req.user = decodedToken;
